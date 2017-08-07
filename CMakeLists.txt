@@ -1,5 +1,5 @@
 cmake_minimum_required( VERSION 2.8 FATAL_ERROR )
-project (urdfdom_headers)
+project (urdfdom_headers_approxik)
 
 set (URDF_MAJOR_VERSION 0)
 set (URDF_MINOR_VERSION 2)
@@ -29,9 +29,9 @@ install(FILES ${cmake_conf_file} DESTINATION share/${PROJECT_NAME}/cmake/ COMPON
 # Make the package config file
 if (NOT MSVC)
   set(PACKAGE_DESC "Unified Robot Description Format")
-  set(pkg_conf_file "${CMAKE_CURRENT_SOURCE_DIR}/cmake/pkgconfig/urdfdom_headers.pc")
+  set(pkg_conf_file "${CMAKE_CURRENT_SOURCE_DIR}/cmake/pkgconfig/urdfdom_headers_approxik.pc")
   configure_file("${pkg_conf_file}.in" "${pkg_conf_file}" @ONLY)
   install(FILES ${pkg_conf_file} DESTINATION lib/pkgconfig/ COMPONENT pkgconfig)
 endif()
 
-message(STATUS "Configuration successful. Type make install to install urdfdom_headers.")
+message(STATUS "Configuration successful. Type make install to install urdfdom_headers_approxik.")
